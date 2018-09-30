@@ -10,7 +10,7 @@ class MyApp extends StatefulWidget {
 }
 
 class MyAppState extends State<MyApp> {
-  String greeting ="";
+  String greeting ="greeting";
 
   @override
   void initState() {
