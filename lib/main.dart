@@ -10,7 +10,7 @@ class MyApp extends StatefulWidget {
 }
 
 class MyAppState extends State<MyApp> {
-  String greeting;
+  String greeting ="";
 
   @override
   void initState() {
@@ -26,14 +26,16 @@ class MyAppState extends State<MyApp> {
     var decoded = json.decode(response.body);
 
     setState(() {
-      greeting = decoded[1]['greeting'];
+      greeting = decoded["greeting"];
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(greeting),
+    return MaterialApp(
+      home: Center(
+        child: Text(greeting),
+      ),
     );
   }
 }
