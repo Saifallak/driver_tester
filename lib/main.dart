@@ -33,8 +33,10 @@ class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Center(
-        child: Text(greeting),
+      home: Scaffold(
+        body: Center(
+          child: Text(greeting),
+        ),
       ),
     );
   }
